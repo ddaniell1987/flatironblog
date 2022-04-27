@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <!--Link for stylesheet/CSS-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+    <header>
+        <a href="index.html" class="logo">Flatiron<h4 class="rainbow-letters"><span>s</span><span>t</span><span>o</span><span>r</span><span>y</span></h4></a>
+        <div  class="menu"></div>
+        <nav class="navigation" id="myTopnav">
+            <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#post">Post</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Post-->
+    <div class="post-box title">
+        <a href="async.html" class="post-title">How to use async/await to fetch() data</a>
+        
+    </div>
+    <section>
+    <p class="post-description">Fetch API is an asynchronous web  API that is used in JavaScript and other programming languages, it returns data in the form of promises.<br>
+        In many cases you have used a Web API without knowing that you are in fact using an API. One of them is called Fetch(), and it is used to make requests to the API. <br>
+        <br><h4 class="post-title">Let's dive a little into this...</h4><br>
+        <h1 class="post-title">Fetch</h1><br>
+        <img class="fetch-img"src="./images/api.png" alt="fetch">
+        <br>
+        <p>In the simplest forms fetch() lets you talk with the APIs that you want to recieve data from. It uses promises to make network requests over the HTTP protocol. Fetch is included in all modern browers, meaning you won't need to import any third-party libraries through something like npm.
+            You can use Fetch right through the fetch() method. It takes in an arguement-- the endpoint's URL in which you want to return the data from. </p>
+            <br>
+            <h4 class="post-title">The Response and object?</h4>
+            <p>Fetch uses two objects, request and response. This response object holds the data that has been sent by the API. Fetch sends the request and then returns a promise (a promise represents an operation that hasn't been completed yet), which is then resolved to the response when the request is completed. If that request fails, the promise will be rejected.
+                In order to get the data that is recieved in the response, you will need to wait for this promise to resolve or complete into the response. This is typically done by the use of the .then to capture the response.</p>
+                <br><h4 class="post-title">Using async/await within fetch()</h4>
+                <br>
+               <img class="fetch-img"src="./images/await url.png" alt="await">
+                <br><p>In some opinions a better and cleaner way of handling the promise is through the use of the async/await keywords. You would start by specifying the caller function as async and then use await to handle the promise. Because of the await keyword, the asynchronous function pauses until the promise that is returned hits the resolved status. The response is then assigned to response one the request completes. </p>
+                <br>
+                <h4 class="post-title">Data Extraction...sounds so serious</h4>
+            <br>
+                <img class="fetch-img" src="./images/fetchbooks.png" alt="fetch">
+            <br>
+                <p>Now although we have the response, we can't quite access the data just yet. The response is returned by await fetch supporting multiple functions for the various formats. This will include the response.json which returns the data as a JSON Object. The responses is not limited to the JSON Object though. Now each of the formats including the ones not mentioned return a promise which resolves into the specific data form. We would then use the await keyword again to extract the APIs response, taking the following form:</p>
+            <br>  We would want to handle errors if and potentially when the request fails. With async/await, we could use the .ok() method to handle the errors projected. </p><br>
+            <img class="fetch-img" src="./images/ok.png" alt="ok response">
+            <br>
+            <p>And that is pretty much the jist of it. At this point you should be all ready to use async/await to fetch data from your API.</p>  
+    </p>
+    <br>
+    
+    
+   <!--JQuery CDN-->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous">
+</script>
+    </body>
+</html>

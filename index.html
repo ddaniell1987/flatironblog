@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookish Magic</title>
+        <!--Link for stylesheet/CSS-->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+    <header>
+        <a href="#" class="logo">Flatiron<h4 class="rainbow-letters"><span>s</span><span>t</span><span>o</span><span>r</span><span>y</span></h4></a>
+        <div  class="menu"></div>
+    
+    <nav class="navigation" id="myTopnav">
+        <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#post">Post</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    </header>
+        <!--Banner-->
+    <section class="banner" id="home">
+        <img class="flower" src="./images/banner2.png" class="cover">
+        <div class="contentBx">
+            <h2>Millenial Makes</h2>
+            <h4>Tech at it's finest!</h4>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+        <!--about-->
+    <section class="about" id="about">
+        <div class="title">
+            <h2>About Me</h2>
+        </div>
+            <div class="contentBx">
+            <div class="content">
+                <p>Hello! I'm Dominique.
+                I love to read --I am a true nerd &#x1f913; <br></br>I was working as a Practice Manager in the Healthcare field, when I decided I needed to shake things up. Giving in to my love of exploration and trying things new I landed upon coding.
+                From the moment I refreshed the page and saw the "Hello, World!" I created, I was hooked and although I have some ups and downs -- some serious downs but some really high ups in comparison, I still love to code. 
+                <br></br>This blog serves as a project for my software engineering project for the Flatiron School.<br></br>
+                
+                <p>Contact me if your interested in talking with me.</p>
+            </div>
+        <div class="content">
+            <div id="imgBx">
+            <img src= "./images/Dominique.png" class="cover">
+            </div>
+        </div>
+        </div>
+        <!--Latest title section-->
+        <a id="post" href="#post"></a>
+        <section class="latest-title">
+            <div class="title">
+                <h2>Tech News</h2>
+                <p>Here are my reviews of my latest posts!</p>
+                
+            </div>  
+        <!--Posts-->
+       
+        <section>
+            <!--Post container 1-->
+            <div class="container">
+                <div class="card">
+                  <div class="card__header">
+                    <img src="./images/fetch.png" alt="card__image" class="card__image" width="600">
+                  </div>
+                  <div class="card__body">
+                    <span class="tag tag-blue">Technology</span>
+                    <h4><a href="async.html">How to use async/await to fetch() data</a></h4>
+                    <p>Fetching data can be as simple as 1..2..3.. and using async await can be even easier.</p>
+                  </div>
+                  <div class="card__footer">
+                    <div class="user">
+                      <img src="./images/Dominique.png" alt="user__image" class="user__image">
+                      <div class="user__info">
+                        <h5>Dominique Florence</h5>
+                        <small>2h ago</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__header">
+                    <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
+                  </div>
+                  <div class="card__body">
+                    <span class="tag tag-brown">Technology</span>
+                    <h4>Coming Soon</h4>
+                    <p>Next post coming here</p>
+                  </div>
+                  <div class="card__footer">
+                    <div class="user">
+                      <img src="./images/Dominique.png" alt="user__image" class="user__image">
+                      <div class="user__info">
+                        <h5>Dominique Florence</h5>
+                        <small>Coming soon</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__header">
+                    <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image" width="600">
+                  </div>
+                  <div class="card__body">
+                    <span class="tag tag-red">Technology</span>
+                    <h4>Coming Soon</h4>
+                    <p>Next post coming soon</p>
+                  </div>
+                  <div class="card__footer">
+                    <div class="user">
+                      <img src="./images/Dominique.png" alt="user__image" class="user__image">
+                      <div class="user__info">
+                        <h5>Dominique Florence</h5>
+                        <small>Coming Soon</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+            
+        </section>
+        <!--contact-->
+        
+        <a id="contact" href="#contact"></a> 
+        <section class="contact" id="contact">
+            <div class="title">
+                <h2>Let's Talk</h2>
+                <p>Let's get to know one another, contact me.</p>
+            </div>
+            
+            <div class="contactForm">
+                <div class="row">
+                    <input type="text" name="" placeholder="First Name">
+                    <input type="text" name="" placeholder="Last Name">
+                </div>
+                <div class="row">
+                    <input type="text" name="" placeholder="Email">
+                    <input type="text" name="" placeholder="Phone Number">
+                </div>
+                <div class="row2">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="row2">
+                    <input type="submit" value="send" class="btn">
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--Link for JavaScript-->
+    <script src="app.js"></script>
+    <!--footer-->
+    <footer>
+    <div class="footer">
+        <p>&#169; 11 Twenty All Rights Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+           
+        </div>
+    </div>
+    </footer>
+   <!--JQuery CDN-->
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    </body>
+</html>
